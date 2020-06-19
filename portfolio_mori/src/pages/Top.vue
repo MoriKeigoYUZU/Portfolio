@@ -77,11 +77,9 @@
                                 <v-card-text
                                         id="text_vw"
                                 >
-                                    <div class="font-weight-bold">{{ awards.name }}
-
-                                            {{ awards.description }}
-                                        
-                                    </div>
+                                        <span class="font-weight-bold">{{ awards.name }}
+                                        </span><br>
+                                    {{ awards.description }}
                                 </v-card-text>
 
                                 <!--<v-card-subtitle-->
@@ -160,6 +158,9 @@
 </script>
 
 <style scoped>
+
+
+    /*スマホ*/
     #radius {
         background-color: rgba(204, 204, 204, 0.3);
         border-radius: 10px 10px 10px 10px;
@@ -179,7 +180,38 @@
     }
 
     #text_vw {
-        font-size: 2vw;
+        font-size: 4vw;
+        line-height: 20px;
     }
+
+
+    @media only screen and (min-width: 651px) {
+        　 /* 中画面用 */
+        　 /* 大画面用 */
+        #radius {
+            background-color: rgba(204, 204, 204, 0.3);
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        #center {
+            text-align: center;
+        }
+
+        #right {
+            text-align: right;
+        }
+
+        #resizeimage {
+            text-align: center;
+            width: 100%;
+        }
+
+        #text_vw {
+            font-size: 3vw;
+            line-height: 45px;
+        }
+
+    }
+
 
 </style>
