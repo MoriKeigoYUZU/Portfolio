@@ -11,17 +11,17 @@
                     color="black"
                     class="font-weight-black headline"
 
-            >MORI KEIGO
+            >MORI KEIGO 森 慶悟
             </v-toolbar-title>
             <v-spacer></v-spacer>
 
-            <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-            </v-btn>
+            <!--<v-btn icon>-->
+                <!--<v-icon>mdi-heart</v-icon>-->
+            <!--</v-btn>-->
 
-            <v-btn icon>
-                <v-icon>mdi-magnify</v-icon>
-            </v-btn>
+            <!--<v-btn icon>-->
+                <!--<v-icon>mdi-magnify</v-icon>-->
+            <!--</v-btn>-->
 
         </v-app-bar>
 

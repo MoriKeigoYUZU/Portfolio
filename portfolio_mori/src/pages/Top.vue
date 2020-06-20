@@ -27,20 +27,44 @@
             <v-col></v-col>
             <v-row>
                 <v-col id="radius">
-                    <div class="title" id="center">- Profile -</div>
+                    <div class="title" id="center">- Profile プロフィール -</div>
                     <v-col>
+                        <v-row>
+                            <v-col cols=12 sm=10 md=8 lg=4 xl=3>
+                                <img src="../assets/mori.jpg" id="resizeimage"/>
+                            </v-col>
+                            <v-col>
+                                <div class="" id="center">学生エンジニア</div>
+                                <div id="center" class="title">森 慶悟</div>
+                                <div class="overline" id="center">Mori Keigo 1999.12.13</div>
+                                <div class="overline" id="center">愛知工業大学</div>
+                                <div class="overline" id="center"><a href="https://pluslab.org/">内藤克浩研究室所属</a></div>
 
-                        <img src="../assets/Nics.jpg" id="resizeimage"/>
-
-                        <div id="center">森 慶悟</div>
-                        <div class="overline" id="center">Mori Keigo 1999.12.13</div>
-                        <div class="overline" id="center">愛知工業大学</div>
-                        <hr width="100%" noshade id="center">
-                        <div class="">web学生エンジニア</div>
-                        <div class>Vue GO AWS勉強中</div>
-                        <div>
-                            <div>Favorite</div>
-                            <span>sneakers , UVERworld</span></div>
+                                <v-row>
+                                    <v-col></v-col>
+                                </v-row>
+                                <hr width="100%" noshade id="center">
+                                <v-row>
+                                    <v-col></v-col>
+                                </v-row>
+                                <span id="">
+                                    <div>大学入学と同時にETロボコンを始めました。</div>
+                                    <div>2年間ロボコンに参加し全国にも行きましたが、やればやるほど自分にあっていないと感じました。</div>
+                                    <div>そこで自分にあうモノを探そうと思い立ち、見つけたのがWEBサービスでした。</div>
+                                    <div>現在では、名古屋の勉強会やハッカソンにも積極的に参加しています。</div>
+                                </span>
+                                <v-row>
+                                    <v-col></v-col>
+                                </v-row>
+                                <hr width="100%" noshade id="center">
+                                <v-row>
+                                    <v-col></v-col>
+                                </v-row>
+                                <div>Favorite things 好きなこと : 靴収集,ドライブ,創作料理</div>
+                                <div>Skill スキル : Vue,JavaScript,Go,C++,EV3</div>
+                                <div>Studying 勉強中 : AWS,PHP</div>
+                            </v-col>
+                        </v-row>
                     </v-col>
                 </v-col>
             </v-row>
@@ -49,11 +73,10 @@
                 <v-col></v-col>
             </v-row>
 
-
             <v-row id="radius">
 
                 <v-col>
-                    <div class="title">awards received</div>
+                    <div class="title" id="center">- Awards Received 受賞歴 -</div>
                 </v-col>
 
                 <v-col
@@ -61,46 +84,127 @@
                         :key="i"
                         cols="12"
                 >
-                    <v-card
-                            class="mx-auto"
-                            max-width="mx-auto"
-                            outlined
+                    <v-hover
+                            v-slot:default="{ hover }"
                     >
-                        <div class="d-flex flex-no-wrap justify-space-between">
-                            <div>
+                        <v-card
+                                :elevation="hover ? 12 : 2"
+                                class="mx-auto"
+                                max-width="mx-auto"
+                                outlined
+                                @click=""
+                        >
+                            <div class="d-flex flex-no-wrap justify-space-between">
 
-                                <v-card-subtitle>
-                                    {{ awards.day }}
-                                </v-card-subtitle>
+                                <div>
+
+                                    <v-card-subtitle>
+                                        {{ awards.day }}
+                                    </v-card-subtitle>
 
 
-                                <v-card-text
-                                        id="text_vw"
-                                >
+                                    <v-card-text
+                                            id="text_vw"
+                                    >
                                         <span class="font-weight-bold">{{ awards.name }}
                                         </span><br>
-                                    {{ awards.description }}
-                                </v-card-text>
+                                        {{ awards.description }}
+                                    </v-card-text>
 
-                                <!--<v-card-subtitle-->
-                                <!--id="text_vw"-->
-                                <!--&gt;-->
-                                <!--</v-card-subtitle>-->
+
+                                </div>
+
+                                <v-avatar
+                                        class="ma-3"
+                                        size="140"
+                                        tile
+                                >
+                                    <v-img :src="awards.src"></v-img>
+                                </v-avatar>
+
 
                             </div>
-
-                            <v-avatar
-                                    class="ma-3"
-                                    size="111"
-                                    tile
-                            >
-                                <v-img :src="awards.src"></v-img>
-                            </v-avatar>
-                        </div>
-                    </v-card>
+                        </v-card>
+                    </v-hover>
 
                 </v-col>
+                <v-col cols="2"></v-col>
             </v-row>
+
+            <v-row>
+                <v-col></v-col>
+            </v-row>
+
+            <v-row id="radius">
+
+                <v-col>
+                    <div class="title" id="center">- Production 制作物 -</div>
+                </v-col>
+
+                <v-col
+                        v-for="(production, i) in production"
+                        :key="i"
+                        cols="12"
+                >
+                    <v-hover
+                            v-slot:default="{ hover }"
+                    >
+                        <v-card
+                                :elevation="hover ? 12 : 2"
+                                class="mx-auto"
+                                max-width="mx-auto"
+                                outlined
+                                @click=""
+                        >
+                            <div class="d-flex flex-no-wrap justify-space-between">
+
+                                <div>
+
+                                    <v-card-subtitle>
+                                        {{ production.teams }}
+                                    </v-card-subtitle>
+
+
+                                    <v-card-text
+                                            id="text_vw"
+                                    >
+                                        <span class="font-weight-bold">{{ production.name }}
+                                        </span><br>
+                                        {{ production.explanation }}
+                                    </v-card-text>
+
+
+                                </div>
+
+                                <v-avatar
+                                        class="ma-3"
+                                        size="140"
+                                        tile
+                                >
+                                    <v-img :src="production.src"></v-img>
+                                </v-avatar>
+
+
+                            </div>
+                        </v-card>
+                    </v-hover>
+
+                </v-col>
+                <v-col cols="2"></v-col>
+            </v-row>
+
+            <v-row>
+                <v-col></v-col>
+            </v-row>
+
+            <v-row id="radius">
+
+                <v-col>
+                    <div class="title">Coming Soon..</div>
+                </v-col>
+
+            </v-row>
+
 
         </v-container>
     </v-app>
@@ -114,16 +218,13 @@
 
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            src: require('../assets/othlomori.jpg'),
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            src: require('../assets/toyohashimori1.jpg'),
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+            src: require('../assets/etmori.jpg'),
           },
         ],
 
@@ -137,20 +238,67 @@
 
         awards: [
           {
+            name: 'ETロボコン2018',
+            day: '2018-11-14',
+            src: require("../assets/et.jpg"),
+            description: '全国1位',
+          },
+          {
             name: 'othlohack2019',
             day: '2019-11-03',
-            src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+            src: require("../assets/tapi.jpg"),
             description: 'ベストエモーショナル賞',
-            img: '',
           },
           {
             name: 'ええじゃないかハッカソン',
             day: '2019-12-27',
-            src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
+            src: require("../assets/udon.jpg"),
             description: 'ウェブインパクト賞',
-            img: '',
           },
+
         ],
+
+        production: [
+          {
+            name: 'ETロボコン2019',
+            teams: 'YakusaReborn',
+            src: require("../assets/ETrobo.jpg"),
+            explanation: 'モデル設計と組み込みプログラミング',
+          },
+          {
+            name: 'CheerFul',
+            teams: 'タピオカ.md',
+            src: require("../assets/cheerful.jpg"),
+            explanation: '路上ライブを身近にする',
+          },
+          {
+            name: 'KanjiLearning',
+            teams: 'Coconut',
+            src: require("../assets/Kanji.jpg"),
+            explanation: '手書き文字を人工知能で判定',
+          },
+          {
+            name: 'Personer',
+            teams: 'UDON',
+            src: require("../assets/personer_logo_green.png"),
+            explanation: '地域のイベントをもっと便利にわくわく！',
+          },
+          {
+            name: 'MusicLinker',
+            // day: '2019-12-27',
+            teams: '-',
+            // src: require("../assets/udon.jpg"),
+            // description: 'ウェブインパクト賞',
+            explanation: '全てのアーティストがフォーカスされる可能性を',
+          },
+          {
+            name: 'Arepos',
+            teams: '-',
+            src: require("../assets/are.png"),
+            // description: 'ウェブインパクト賞',
+            explanation: '地域の課題をG空間情報を活用し解決',
+          },
+        ]
 
       }
     },
@@ -207,7 +355,7 @@
         }
 
         #text_vw {
-            font-size: 3vw;
+            font-size: 2vw;
             line-height: 45px;
         }
 
