@@ -205,14 +205,14 @@
 
             </v-row>
 
-            <router-link to="Etrobo2018_awards">Go to home</router-link>
+            <router-link to="/Etrobo2018_awards">Etrobo2018_awards</router-link>
         </v-container>
     </v-app>
 </template>
 
 <script>
 
-  import Etrobo2018_awards from '../pages/awards/Etrobo2018_awards'
+  // import Etrobo2018_awards from '../pages/awards/Etrobo2018_awards'
 
   export default {
 
@@ -221,7 +221,7 @@
       return {
 
         components: {
-          Etrobo2018_awards,
+          // Etrobo2018_awards,
         },
 
         items: [

@@ -1,5 +1,5 @@
 <template>
-    <h1>as</h1>
+    <div>a</div>
 </template>
 
 <script>
@@ -9,5 +9,3 @@
 </script>
 
 <style scoped>
-
-</style>
