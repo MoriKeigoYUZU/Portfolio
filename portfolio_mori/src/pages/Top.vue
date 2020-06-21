@@ -31,7 +31,7 @@
                     <v-col>
                         <v-row>
                             <v-col cols=12 sm=10 md=8 lg=4 xl=3>
-                                <img src="../assets/mori.jpg" id="resizeimage"/>
+                                <img src="../assets/profile/mori.jpg" id="resizeimage"/>
                             </v-col>
                             <v-col>
                                 <div class="" id="center">学生エンジニア</div>
@@ -205,26 +205,34 @@
 
             </v-row>
 
-
+            <router-link to="Etrobo2018_awards">Go to home</router-link>
         </v-container>
     </v-app>
 </template>
 
 <script>
+
+  import Etrobo2018_awards from '../pages/awards/Etrobo2018_awards'
+
   export default {
+
 
     data() {
       return {
 
+        components: {
+          Etrobo2018_awards,
+        },
+
         items: [
           {
-            src: require('../assets/othlomori.jpg'),
+            src: require('../assets/othlohack2019/othlohack2019_carousel.jpg'),
           },
           {
-            src: require('../assets/toyohashimori1.jpg'),
+            src: require('../assets/toyohashihack2019/toyohashihack2019_carousel.jpg'),
           },
           {
-            src: require('../assets/etmori.jpg'),
+            src: require('../assets/etrobo/2019/etrobo_2019_carousel.jpg'),
           },
         ],
 
@@ -240,19 +248,19 @@
           {
             name: 'ETロボコン2018',
             day: '2018-11-14',
-            src: require("../assets/et.jpg"),
+            src: require("../assets/etrobo/2018/etrobo_2018_awards.jpg"),
             description: '全国1位',
           },
           {
             name: 'othlohack2019',
             day: '2019-11-03',
-            src: require("../assets/tapi.jpg"),
+            src: require("../assets/othlohack2019/othlohack2019_awards.jpg"),
             description: 'ベストエモーショナル賞',
           },
           {
             name: 'ええじゃないかハッカソン',
             day: '2019-12-27',
-            src: require("../assets/udon.jpg"),
+            src: require("../assets/toyohashihack2019/toyohashihack2019_awards.jpg"),
             description: 'ウェブインパクト賞',
           },
 
@@ -262,40 +270,38 @@
           {
             name: 'ETロボコン2019',
             teams: 'YakusaReborn',
-            src: require("../assets/ETrobo.jpg"),
+            src: require("../assets/etrobo/2019/etrobo_2019_production.jpg"),
             explanation: 'モデル設計と組み込みプログラミング',
           },
           {
             name: 'CheerFul',
             teams: 'タピオカ.md',
-            src: require("../assets/cheerful.jpg"),
+            src: require("../assets/othlohack2019/othlohack2019_production.jpg"),
             explanation: '路上ライブを身近にする',
           },
           {
             name: 'KanjiLearning',
             teams: 'Coconut',
-            src: require("../assets/Kanji.jpg"),
+            src: require("../assets/kanjilearning/kanjilearning_production.jpg"),
             explanation: '手書き文字を人工知能で判定',
           },
           {
             name: 'Personer',
             teams: 'UDON',
-            src: require("../assets/personer_logo_green.png"),
+            src: require("../assets/toyohashihack2019/toyohashihack2019_production.png"),
             explanation: '地域のイベントをもっと便利にわくわく！',
           },
           {
             name: 'MusicLinker',
             // day: '2019-12-27',
             teams: '-',
-            // src: require("../assets/udon.jpg"),
-            // description: 'ウェブインパクト賞',
+            // src: require("../assets/toyohashihack2019_awards.jpg"),
             explanation: '全てのアーティストがフォーカスされる可能性を',
           },
           {
             name: 'Arepos',
             teams: '-',
-            src: require("../assets/are.png"),
-            // description: 'ウェブインパクト賞',
+            src: require("../assets/geohack2019/geohack2019_production.png"),
             explanation: '地域の課題をG空間情報を活用し解決',
           },
         ]

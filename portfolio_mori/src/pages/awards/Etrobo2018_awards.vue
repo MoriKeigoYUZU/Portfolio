@@ -1,9 +1,10 @@
 <template>
+    <h1>as</h1>
 </template>
 
 <script>
   export default {
-    name: "carousel"
+    name: "Etrobo2018_awards"
   }
 </script>
 
