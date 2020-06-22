@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Top from '../pages/Top.vue'
 
-import Etrobo_2018_awards from '../pages/Etrobo_2018_awards'
+import Etrobo_2018_awards from '../pages/awards/Etrobo_2018_awards'
+import Othlohack2019_awards from '../pages/awards/Othlohack2019_awards'
+import Toyohashihack2019_awards from '../pages/awards/Toyohashihack2019_awards'
+
 
 
 Vue.use(VueRouter)
@@ -10,24 +13,28 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/About.vue')
-    }
+    name: 'Top',
+    component: Top
   },
   {
     path: '/Etrobo_2018_awards',
     name: 'Etrobo_2018_awards',
     component: Etrobo_2018_awards
+  },
+  {
+    path: '/Othlohack2019_awards',
+    name: 'Othlohack2019_awards',
+    component: Othlohack2019_awards
+  },
+  {
+    path: '/Toyohashihack2019_awards',
+    name: 'Toyohashihack2019_awards',
+    component: Toyohashihack2019_awards
   }
+
+
+
+
 ]
 
 const router = new VueRouter({
