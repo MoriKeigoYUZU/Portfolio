@@ -2,9 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
+import Etrobo_2018_awards from '../pages/Etrobo_2018_awards'
+
+
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
@@ -19,6 +22,11 @@ Vue.use(VueRouter)
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
+  },
+  {
+    path: '/Etrobo_2018_awards',
+    name: 'Etrobo_2018_awards',
+    component: Etrobo_2018_awards
   }
 ]
 
