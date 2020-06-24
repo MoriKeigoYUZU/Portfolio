@@ -39,6 +39,8 @@
                                 <div class="overline" id="center">Mori Keigo 1999.12.13</div>
                                 <div class="overline" id="center">愛知工業大学</div>
                                 <div class="overline" id="center"><a href="https://pluslab.org/">内藤克浩研究室所属</a></div>
+                                <div class="overline" id="center"><a
+                                        href="https://set1.ie.aitech.ac.jp/">システム工学研究会所属</a></div>
 
                                 <v-row>
                                     <v-col></v-col>
@@ -93,6 +95,7 @@
                                 max-width="mx-auto"
                                 outlined
                                 @click=""
+                                :to="awards.to"
                         >
                             <div class="d-flex flex-no-wrap justify-space-between">
 
@@ -146,15 +149,18 @@
                         :key="i"
                         cols="12"
                 >
+
                     <v-hover
                             v-slot:default="{ hover }"
                     >
+
                         <v-card
                                 :elevation="hover ? 12 : 2"
                                 class="mx-auto"
                                 max-width="mx-auto"
                                 outlined
                                 @click=""
+                                to="/Etrobo_2018_awards"
                         >
                             <div class="d-flex flex-no-wrap justify-space-between">
 
@@ -188,8 +194,8 @@
                             </div>
                         </v-card>
                     </v-hover>
-
                 </v-col>
+
                 <v-col cols="2"></v-col>
             </v-row>
 
@@ -250,18 +256,21 @@
             day: '2018-11-14',
             src: require("../assets/etrobo/2018/etrobo_2018_awards.jpg"),
             description: '全国1位',
+            to: '/Etrobo_2018_awards',
           },
           {
             name: 'othlohack2019',
             day: '2019-11-03',
             src: require("../assets/othlohack2019/othlohack2019_awards.jpg"),
             description: 'ベストエモーショナル賞',
+            to: 'Othlohack2019_awards',
           },
           {
             name: 'ええじゃないかハッカソン',
             day: '2019-12-27',
             src: require("../assets/toyohashihack2019/toyohashihack2019_awards.jpg"),
             description: 'ウェブインパクト賞',
+            to: 'Toyohashihack2019_awards',
           },
 
         ],

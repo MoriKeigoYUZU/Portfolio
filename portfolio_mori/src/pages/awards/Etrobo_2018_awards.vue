@@ -4,7 +4,7 @@
 
             <v-row>
                 <v-col id="radius">
-                    ETロボコン2018年
+                    <div class="6rem">ETロボコン2018年</div>
                 </v-col>
             </v-row>
         </v-container>
