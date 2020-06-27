@@ -9,7 +9,9 @@
                     class="font-weight-black headline"
 
             >
-                MORI KEIGO 森 慶悟
+                <router-link id="router-link" to="/">
+                    MORI KEIGO 森 慶悟
+                </router-link>
             </v-toolbar-title>
             <v-spacer></v-spacer>
 
@@ -69,3 +71,12 @@
     }),
   };
 </script>
+
+<style scoped>
+
+    #router-link {
+        text-decoration: none;
+        color:black;
+    }
+
+</style>
