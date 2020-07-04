@@ -160,7 +160,7 @@
                                 max-width="mx-auto"
                                 outlined
                                 @click=""
-                                to="/Etrobo_2018_awards"
+                                :to="production.to"
                         >
                             <div class="d-flex flex-no-wrap justify-space-between">
 
@@ -281,24 +281,29 @@
             teams: 'YakusaReborn',
             src: require("../assets/etrobo/2019/etrobo_2019_production.jpg"),
             explanation: 'モデル設計と組み込みプログラミング',
+            to: 'Etrobo_2019_production'
           },
           {
             name: 'CheerFul',
             teams: 'タピオカ.md',
             src: require("../assets/othlohack2019/othlohack2019_production.jpg"),
             explanation: '路上ライブを身近にする',
+            to: 'Othlohack2019_production'
           },
           {
             name: 'KanjiLearning',
             teams: 'Coconut',
             src: require("../assets/kanjilearning/kanjilearning_production.jpg"),
             explanation: '手書き文字を人工知能で判定',
+            to: 'Kanjilearning_production'
           },
           {
             name: 'Personer',
             teams: 'UDON',
             src: require("../assets/toyohashihack2019/toyohashihack2019_production.png"),
             explanation: '地域のイベントをもっと便利にわくわく！',
+
+            to: 'Toyohashihack2019_production'
           },
           {
             name: 'MusicLinker',
@@ -306,12 +311,16 @@
             teams: '-',
             // src: require("../assets/toyohashihack2019_awards.jpg"),
             explanation: '全てのアーティストがフォーカスされる可能性を',
+
+            to: 'MusicLinker_production'
           },
           {
             name: 'Arepos',
             teams: '-',
             src: require("../assets/geohack2019/geohack2019_production.png"),
             explanation: '地域の課題をG空間情報を活用し解決',
+
+            to: 'Geohack2019_production'
           },
         ]
 
@@ -325,7 +334,7 @@
 
     /*スマホ*/
     #radius {
-        background-color: rgba(204, 204, 204, 0.3);
+        background-color: rgba(204, 204, 204, 0.4);
         border-radius: 10px 10px 10px 10px;
     }
 
@@ -352,7 +361,7 @@
         　 /* 中画面用 */
         　 /* 大画面用 */
         #radius {
-            background-color: rgba(204, 204, 204, 0.3);
+            background-color: rgba(204, 204, 204, 0.4);
             border-radius: 10px 10px 10px 10px;
         }
 
