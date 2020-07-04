@@ -4,7 +4,7 @@
 
             <v-row id="radius">
                 <v-col>
-                    <h1 id="center">ETロボコン2018年</h1>
+                    <h1 id="center">ETロボコン2018年 プライマリー部門優勝</h1>
                 </v-col>
                 <v-row>
                     <v-col cols=12 sm=12 md=5 lg=4 xl=4>
@@ -59,7 +59,7 @@
 
                         <!--<img id="resizeimage1" src="../../assets/etrobo/2018/awards/ETrobo_award.jpg">-->
 
-                        <youtube :video-id="videoId" width="100%"/>
+                        <youtube :video-id="videoId" width="100%"  />
                     </v-col>
                     <v-col cols="12" sm="7" md="7" lg="7">
                         <h3 style="text-indent:1em">全国(決勝)大会</h3>
@@ -77,6 +77,9 @@
                         </p>
                     </v-col>
                 </v-row>
+
+
+
 
                 <v-row>
                     <v-col cols=12 sm=12 md=4 lg=4 xl=4>
