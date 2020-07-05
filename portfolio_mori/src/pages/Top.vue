@@ -211,7 +211,7 @@
 
             </v-row>
 
-            <router-link to="/Etrobo2018_awards">Etrobo2018_awards</router-link>
+            <!--<router-link to="/Etrobo2018_awards">Etrobo2018_awards</router-link>-->
         </v-container>
     </v-app>
 </template>
@@ -309,7 +309,7 @@
             name: 'MusicLinker',
             // day: '2019-12-27',
             teams: '-',
-            // src: require("../assets/toyohashihack2019_awards.jpg"),
+            src: require("../assets/musiclinker/rogo.png"),
             explanation: '全てのアーティストがフォーカスされる可能性を',
 
             to: 'MusicLinker_production'

@@ -59,7 +59,7 @@
 
                         <!--<img id="resizeimage1" src="../../assets/etrobo/2018/awards/ETrobo_award.jpg">-->
 
-                        <youtube :video-id="videoId" width="100%"  />
+                        <youtube :video-id="videoId" width="100%"/>
                     </v-col>
                     <v-col cols="12" sm="7" md="7" lg="7">
                         <h3 style="text-indent:1em">全国(決勝)大会</h3>
@@ -79,13 +79,11 @@
                 </v-row>
 
 
-
-
                 <v-row>
                     <v-col cols=12 sm=12 md=4 lg=4 xl=4>
 
 
-                        <img id="resizeimage" src="../../assets/etrobo/2018/awards/ETrobo_award.jpg" />
+                        <img id="resizeimage" src="../../assets/etrobo/2018/awards/ETrobo_award.jpg"/>
                     </v-col>
 
 
@@ -97,6 +95,11 @@
                             加入した当時は"なにかしたい"という気持ちで入ったため、組み込みシステムやSI企業がどのようなものか知りませんでした。<br>
                             しかし、1年のうちから大手企業や同期の大学生と交流できる機会ができ、自分が何に向いているかもわかりました。<br>
                             次の年は自分がチームリーダーになるため、「来年も優勝したい」と意気込んでいました。<br>
+
+                        </p>
+                        <p>
+                            来年->
+                            <router-link to="/Etrobo_2019_production">Etrobo2019年ETロボコン</router-link>
                         </p>
                     </v-col>
                 </v-row>
@@ -114,7 +117,6 @@
   import VueYoutube from 'vue-youtube'
 
   Vue.use(VueYoutube)
-
 
 
   export default {
