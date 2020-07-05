@@ -115,13 +115,15 @@
 
   Vue.use(VueYoutube)
 
+
+
   export default {
     name: "Etrobo_2018_awards",
     data() {
       return {
         videoId: '0vd_vBoP5ww?t=3855'
       }
-    }
+    },
   }
 </script>
 
