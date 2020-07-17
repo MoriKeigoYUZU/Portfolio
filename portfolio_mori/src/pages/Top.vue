@@ -204,13 +204,13 @@
                 <v-col></v-col>
             </v-row>
 
-            <v-row id="radius">
+            <!--<v-row id="radius">-->
 
-                <v-col>
-                    <div class="title">Coming Soon..</div>
-                </v-col>
+                <!--<v-col>-->
+                    <!--<div class="title">Coming Soon..</div>-->
+                <!--</v-col>-->
 
-            </v-row>
+            <!--</v-row>-->
 
             <!--<router-link to="/Etrobo2018_awards">Etrobo2018_awards</router-link>-->
         </v-container>

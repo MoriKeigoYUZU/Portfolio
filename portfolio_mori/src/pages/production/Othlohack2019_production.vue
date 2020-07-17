@@ -31,6 +31,7 @@
                     </v-col>
                     <v-col cols="1"></v-col>
                 </v-row>
+
                 <v-row>
                     <v-col cols="1"></v-col>
                     <v-col cols="10">
@@ -63,7 +64,6 @@
                     <v-col cols="1"></v-col>
                 </v-row>
 
-
                 <v-row>
                     <v-col cols="1"></v-col>
                     <v-col cols="10">
@@ -84,7 +84,6 @@
                             <video width="100%" src="../../assets/othlohack2019/1.アーティストがライブを開始する映像(1画面).mp4" controls/>
                         </p>
                         <hr width="100%" noshade id="center">
-
                     </v-col>
                     <v-col cols="1"></v-col>
                 </v-row>
@@ -92,7 +91,6 @@
                 <v-row>
                     <v-col cols="1"></v-col>
                     <v-col cols="10">
-
                         <p id="center">
                             <br>2.観客は近くの路上ライブを選択する。
                         </p>
@@ -101,11 +99,9 @@
                                    controls/>
                         </p>
                         <hr width="100%" noshade id="center">
-
                     </v-col>
                     <v-col cols="1"></v-col>
                 </v-row>
-
 
                 <v-row>
                     <v-col cols="1"></v-col>
@@ -127,7 +123,6 @@
                 <v-row>
                     <v-col cols="1"></v-col>
                     <v-col cols="10">
-
                         <p id="center">
                             <br>4.観客は路上ライブ会場に到着したら、応援を始める。<br>
                         </p>
@@ -136,11 +131,9 @@
                                    controls/>
                         </p>
                         <hr width="100%" noshade id="center">
-
                     </v-col>
                     <v-col cols="1"></v-col>
                 </v-row>
-
 
                 <v-row>
                     <v-col cols="1"></v-col>
@@ -157,11 +150,9 @@
                                    controls/>
                         </p>
                         <hr width="100%" noshade id="center">
-
                     </v-col>
                     <v-col cols="1"></v-col>
                 </v-row>
-
 
                 <v-row>
                     <v-col cols="1"></v-col>
@@ -184,22 +175,18 @@
                 <v-row>
                     <v-col cols="1"></v-col>
                     <v-col cols="10">
-
                         <h3 style="text-indent:1em">使用技術</h3>
                         <p>
                             HTML、CSS、JavaScriptをPWA化して、Firebaseに載せています。<br>
                             位置情報は、スマートフォンのGPS機能を利用しています。
                         </p>
                         <p id="center">
-
                             <img width="100%" src="../../assets/othlohack2019/スライド20.png"/>
                         </p>
-
                     </v-col>
                     <v-col cols="1"></v-col>
                 </v-row>
             </v-row>
-
         </v-container>
     </v-app>
 </template>

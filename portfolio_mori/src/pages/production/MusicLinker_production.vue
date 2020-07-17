@@ -1,23 +1,18 @@
 <template>
     <v-app>
         <v-container class="lighten-5">
-
             <v-row id="radius">
-
-
                 <v-row>
                     <v-col cols="1"></v-col>
                     <v-col cols="10">
+
                         <v-row>
                             <v-col cols="2"></v-col>
                             <v-col id="center" cols="12" sm="8" md="8" lg="8">
-
                                 <img width="100%" src="../../assets/musiclinker/rogol.png"/>
-
                             </v-col>
                             <v-col cols="2"></v-col>
                         </v-row>
-
 
                         <p>
                             大学の5人メンバーで、全てのアーティストがフォーカスされる可能性を提供できるwebアプリ「MusicLinker」作成しました。<br>
@@ -56,7 +51,9 @@
                                 アーティストは、会員登録の際に自分たちの情報を登録する。
                             </v-col>
                         </v-row>
+
                         <hr width="100%" noshade id="center">
+
                         <v-row>
                             <v-col></v-col>
                         </v-row>
@@ -85,7 +82,6 @@
                                 2.アーティストに登録してもらった情報で検索し、自分にマッチしたアーティストをお気に入り登録できる。
                             </v-col>
                         </v-row>
-
                     </v-col>
                     <v-col cols="1"></v-col>
                 </v-row>

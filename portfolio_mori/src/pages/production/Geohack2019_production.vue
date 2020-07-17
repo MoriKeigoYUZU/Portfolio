@@ -3,7 +3,6 @@
         <v-container class="lighten-5">
 
             <v-row id="radius">
-
                 <v-row>
                     <v-col cols="12">
                         <h1 id="center">Arepos</h1>
@@ -11,7 +10,6 @@
                 </v-row>
 
                 <v-row>
-
                     <v-row>
                         <v-col cols="2">
                         </v-col>
@@ -23,32 +21,37 @@
                         <v-col cols="2"></v-col>
                     </v-row>
 
-
                     <v-row>
                         <v-col cols="1"></v-col>
                         <v-col cols="10">
 
-
-                            <p>
-
-                                普段開発を共にしている、大学の5人メンバーで「<a href="https://ghp.connpass.com/event/157260/">Geospatial
-                                Hackers
-                                Program</a>」を参加し、地域同士を活性化し合うSNSアプリ「Arepos」作成しました。<br>
-                            </p>
-                            <h3 style="text-indent:1em">機能</h3>
-                            <p>
-                                ・おすすめスポットをコメントと共に共有<br>
-                                ・投稿へのいいねはスポットの地域にも反映<br>
-                                ・地域別で様々なデータが参照<br>
-                                の、機能を実装しました。<br>
-                            </p>
+                            <v-row>
+                                <v-col>
+                                    <p>
+                                        普段開発を共にしている、大学の5人メンバーで「<a href="https://ghp.connpass.com/event/157260/">Geospatial
+                                        Hackers
+                                        Program</a>」を参加し、地域同士を活性化し合うSNSアプリ「Arepos」作成しました。<br>
+                                    </p>
+                                    <h3 style="text-indent:1em">機能</h3>
+                                    <p>
+                                        ・おすすめスポットをコメントと共に共有<br>
+                                        ・投稿へのいいねはスポットの地域にも反映<br>
+                                        ・地域別で様々なデータが参照<br>
+                                        の、機能を実装しました。<br>
+                                    </p>
+                                </v-col>
+                            </v-row>
 
 
                             <v-row>
                                 <v-col></v-col>
                             </v-row>
 
-                            <h3 style="text-indent:1em">Arepos</h3>
+                            <v-row>
+                                <v-col>
+                                    <h3 style="text-indent:1em">Arepos</h3>
+                                </v-col>
+                            </v-row>
 
                             <v-row>
                                 <v-col cols="12" sm="3" md="3" lg="3">
@@ -66,7 +69,6 @@
                                     投稿されたスポットは、投稿順で閲覧することができる。<br>
                                 </v-col>
                             </v-row>
-                            <!--<hr width="100%" noshade id="center">-->
 
                             <v-row>
                                 <v-col cols="12" sm="3" md="3" lg="3">
@@ -88,23 +90,24 @@
                                 <v-col></v-col>
                             </v-row>
 
-                            <h3 style="text-indent:1em">使用技術</h3>
+                            <v-row>
+                                <v-col>
+                                    <h3 style="text-indent:1em">使用技術</h3>
 
-                            <p id="center">
-                                <img width="70%" src="../../assets/geohack2019/3.jpg"/>
-                            </p>
-                            <p>
-                                全体としてAWSのサービスを使い、フロントエンドはNuxt.jsが、バックエンドはGinを使って作られています。<br>
-                                具体的には端末からNuxt.jsまではウェブページを取得するHTTP通信、Nuxt.jsからGinに対してはコンテンツを扱うためのAPI通信、GinからRDBにたいしてはデータを取得するためのDB通信が行われ、同じ向きを辿って端末にウェブページが表示されるという流れです。</br>
-                            </p>
+                                    <p id="center">
+                                        <img width="70%" src="../../assets/geohack2019/3.jpg"/>
+                                    </p>
+                                    <p>
+                                        全体としてAWSのサービスを使い、フロントエンドはNuxt.jsが、バックエンドはGinを使って作られています。<br>
+                                        具体的には端末からNuxt.jsまではウェブページを取得するHTTP通信、Nuxt.jsからGinに対してはコンテンツを扱うためのAPI通信、GinからRDBにたいしてはデータを取得するためのDB通信が行われ、同じ向きを辿って端末にウェブページが表示されるという流れです。</br>
+                                    </p>
+                                </v-col>
+                            </v-row>
+
                         </v-col>
                         <v-col cols="1"></v-col>
                     </v-row>
-
-
                 </v-row>
-
-
             </v-row>
         </v-container>
     </v-app>
