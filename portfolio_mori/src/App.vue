@@ -10,7 +10,7 @@
 
             >
                 <router-link id="router-link" to="/">
-                    MORI KEIGO 森 慶悟
+                    MORI KEIGO もり けいご
                 </router-link>
             </v-toolbar-title>
             <v-spacer></v-spacer>

@@ -125,8 +125,6 @@
                                 >
                                     <v-img :src="awards.src"></v-img>
                                 </v-avatar>
-
-
                             </div>
                         </v-card>
                     </v-hover>
