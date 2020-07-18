@@ -7,8 +7,7 @@
 
                     <v-carousel
                             cycle
-                            height="400"
-                            wide="30"
+                            height="400px"
                             hide-delimiter-background
                             show-arrows-on-hover
                     >
@@ -125,7 +124,6 @@
                                 </div>
                             </v-card>
                         </v-hover>
-
                     </v-col>
                 </v-col>
             </v-row>
@@ -374,6 +372,10 @@
         #padding {
             padding-left: 60px;
             padding-right: 60px;
+        }
+
+        #carousel{
+
         }
 
 
