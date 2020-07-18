@@ -3,8 +3,7 @@
         <v-container class="lighten-5">
 
             <v-row id="radius">
-                <v-col cols="1"></v-col>
-                <v-col cols="10">
+                <v-col id="padding">
 
                     <v-row>
                         <v-col>
@@ -100,7 +99,6 @@
                     </v-row>
 
                 </v-col>
-                <v-col cols="1"></v-col>
             </v-row>
         </v-container>
     </v-app>
@@ -143,27 +141,18 @@
         border-radius: 10px 10px 10px 10px;
     }
 
-    #youtube {
-        background-color: rgba(250, 250, 250, 0.3);
-        border-radius: 10px 10px 10px 10px;
-    }
 
     #center {
         text-align: center;
     }
 
-    #right {
-        text-align: right;
-    }
 
     #resizeimage {
         text-align: center;
         width: 100%;
     }
 
-    #text_vw {
-        font-size: 4vw;
-        line-height: 20px;
+    #padding {
     }
 
 
@@ -175,28 +164,20 @@
             border-radius: 10px 10px 10px 10px;
         }
 
-        #radiusw {
-            background-color: rgba(250, 250, 250, 0.3);
-            border-radius: 10px 10px 10px 10px;
-
-        }
 
         #center {
             text-align: center;
         }
 
-        #right {
-            text-align: right;
-        }
 
         #resizeimage {
             text-align: center;
             width: 100%;
         }
 
-        #text_vw {
-            font-size: 2vw;
-            line-height: 45px;
+        #padding {
+            padding-left: 60px;
+            padding-right: 60px;
         }
 
     }
