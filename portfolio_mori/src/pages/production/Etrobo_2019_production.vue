@@ -3,8 +3,7 @@
         <v-container class="lighten-5">
 
             <v-row id="radius">
-                <v-col cols="1"></v-col>
-                <v-col cols="10">
+                <v-col cols="" id="padding">
 
                     <v-row>
                         <v-col cols="12">
@@ -14,8 +13,6 @@
 
                     <v-row>
                         <v-col cols="12" sm="4" md="4" lg="4">
-
-
                             <div id="center">
                                 <img width="100%" src="../../assets/etrobo/2019/etrobo_2019_carousel.jpg"/>
                             </div>
@@ -107,7 +104,6 @@
                     </v-row>
 
                 </v-col>
-                <v-col cols="1"></v-col>
             </v-row>
         </v-container>
     </v-app>
@@ -133,23 +129,9 @@
 <style scoped>
 
 
-    #resizeimage {
-        width: 100%;
-    }
-
-    #resizeimage1 {
-        width: 100%;
-    }
-
-
     /*スマホ*/
     #radius {
         background-color: rgba(204, 204, 204, 0.3);
-        border-radius: 10px 10px 10px 10px;
-    }
-
-    #youtube {
-        background-color: rgba(250, 250, 250, 0.3);
         border-radius: 10px 10px 10px 10px;
     }
 
@@ -157,23 +139,7 @@
         text-align: center;
     }
 
-    #right {
-        text-align: right;
-    }
-
-    #resizeimage {
-        text-align: center;
-        width: 100%;
-    }
-
-    #text_vw {
-        font-size: 4vw;
-        line-height: 20px;
-    }
-
-    #model {
-        width: 20%;
-
+    #padding {
     }
 
 
@@ -185,33 +151,9 @@
             border-radius: 10px 10px 10px 10px;
         }
 
-        #radiusw {
-            background-color: rgba(250, 250, 250, 0.3);
-            border-radius: 10px 10px 10px 10px;
-
-        }
-
-        #center {
-            text-align: center;
-        }
-
-        #right {
-            text-align: right;
-        }
-
-        #resizeimage {
-            text-align: center;
-            width: 100%;
-        }
-
-        #text_vw {
-            font-size: 2vw;
-            line-height: 45px;
-        }
-
-        #model {
-            width: 20%;
-            /*height: 20%;*/
+        #padding {
+            padding-left: 60px;
+            padding-right: 60px;
         }
 
     }

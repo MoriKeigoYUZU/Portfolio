@@ -24,7 +24,7 @@
                     </div>
                 </v-col>
             </v-row>
-            
+
             <v-col></v-col>
             <v-row>
                 <v-col id="radius">
@@ -204,9 +204,9 @@
 
             <!--<v-row id="radius">-->
 
-                <!--<v-col>-->
-                    <!--<div class="title">Coming Soon..</div>-->
-                <!--</v-col>-->
+            <!--<v-col>-->
+            <!--<div class="title">Coming Soon..</div>-->
+            <!--</v-col>-->
 
             <!--</v-row>-->
 
@@ -315,7 +315,7 @@
           },
           {
             name: 'Arepos',
-            teams: '-',
+            teams: 'MORIMORI',
             src: require("../assets/geohack2019/geohack2019_production.png"),
             explanation: '地域の課題をG空間情報を活用し解決',
 
@@ -330,9 +330,10 @@
 
 <style scoped>
 
-
     /*スマホ*/
     #radius {
+        /*margin-left: 20px;*/
+        /*margin-right: 20px;*/
         background-color: rgba(204, 204, 204, 0.4);
         border-radius: 10px 10px 10px 10px;
     }
@@ -360,22 +361,12 @@
         　 /* 中画面用 */
         　 /* 大画面用 */
         #radius {
+            /*margin-left: 20px;*/
+            /*margin-right: 20px;*/
             background-color: rgba(204, 204, 204, 0.4);
             border-radius: 10px 10px 10px 10px;
         }
 
-        #center {
-            text-align: center;
-        }
-
-        #right {
-            text-align: right;
-        }
-
-        #resizeimage {
-            text-align: center;
-            width: 100%;
-        }
 
         #text_vw {
             font-size: 2vw;
