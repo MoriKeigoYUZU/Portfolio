@@ -43,7 +43,7 @@
                                     <a href="https://pluslab.org/">内藤克浩研究室所属</a><br>
                                     <a href="https://set1.ie.aitech.ac.jp/">システム工学研究会所属</a><br>
                                     <a href="https://github.com/MoriKeigoYUZU">GitHub</a><br>
-                                    <a href="https://twitter.com/morikeigo_it">Twiter</a><br>
+                                    <a href="https://twitter.com/morikeigo_it">Twitter</a><br>
                                 </div>
                                 <hr width="100%" noshade id="center">
                                 <v-row>
