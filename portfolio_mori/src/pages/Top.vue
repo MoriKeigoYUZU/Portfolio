@@ -306,8 +306,14 @@
             teams: 'MORIMORI',
             src: require("../assets/geohack2019/geohack2019_production.png"),
             explanation: '地域の課題をG空間情報を活用し解決',
-
             to: 'Geohack2019_production'
+          },
+          {
+            name: '俺の最強対策ノート',
+            teams: '-',
+            src: require("../assets/saikyonote/俺.png"),
+            explanation: 'スマブラSPの自作対策ノート',
+            to: 'Saikyonote_production'
           },
         ]
 

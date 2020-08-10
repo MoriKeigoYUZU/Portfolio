@@ -12,6 +12,7 @@ import Kanjilearning_production from '../pages/production/Kanjilearning_producti
 import MusicLinker_production from '../pages/production/MusicLinker_production'
 import Othlohack2019_production from '../pages/production/Othlohack2019_production'
 import Toyohashihack2019_production from '../pages/production/Toyohashihack2019_production'
+import Saikyonote_production from '../pages/production/Saikyonote_production'
 
 
 Vue.use(VueRouter)
@@ -67,7 +68,11 @@ const routes = [
     name: 'Toyohashihack2019_production',
     component: Toyohashihack2019_production
   },
-
+  {
+    path: '/Saikyonote_production',
+    name: 'Saikyonote_production',
+    component: Saikyonote_production
+  },
 
 ]
 
