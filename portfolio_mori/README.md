@@ -17,3 +17,14 @@ yarn build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Firebass hosting
+ビルド<br>
+```
+npm run build
+```
+
+デプロイ<br>
+```
+firebase deploy
+```
