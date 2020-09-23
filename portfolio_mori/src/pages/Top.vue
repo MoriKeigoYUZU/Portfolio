@@ -2,9 +2,9 @@
     <v-app>
         <v-container class="lighten-5">
 
+            <!-- スライドショー -->
             <v-row id="radius">
                 <v-col id="padding">
-
                     <v-carousel
                             cycle
                             height="400px"
@@ -25,9 +25,9 @@
                 </v-col>
             </v-row>
 
+            <!-- プロフィール欄 -->
             <v-row id="radius">
                 <v-col id="padding">
-
                     <div class="title" id="center">- Profile プロフィール -</div>
                     <v-col>
                         <v-row>
@@ -35,7 +35,7 @@
                                 <img src="../assets/profile/mori.jpg" id="resizeimage"/>
                             </v-col>
                             <v-col>
-                                <div class="" id="center">学生エンジニア</div>
+                                <!--<div class="" id="center">学生エンジニア</div>-->
                                 <div class="title" id="center">森 慶悟</div>
                                 <div class="overline" id="center">
                                     Mori Keigo 1999.12.13<br>
@@ -62,22 +62,70 @@
                                 <v-row>
                                     <v-col></v-col>
                                 </v-row>
-                                <div>Favorite things 好きなこと : 靴収集,ドライブ,創作料理</div>
-                                <div>Skill スキル : Vue,JavaScript,Go,C++,EV3</div>
-                                <div>Studying 勉強中 : AWS,PHP</div>
+                                <div>Favorite things 好きなこと : 靴収集(Nike),ドライブ,創作料理</div>
+                                <div>Skill スキル : Vue.js , Go , C++ , EV3</div>
+                                <div>Studying 勉強中 : Docker , AWS</div>
                             </v-col>
                         </v-row>
                     </v-col>
                 </v-col>
             </v-row>
 
+            <!-- インターンシップ -->
             <v-row id="radius">
                 <v-col id="padding">
+                    <v-col>
+                        <div class="title" id="center">- Internship インターンシップ -</div>
+                    </v-col>
+                    <v-col
+                            v-for="(internship, i) in internship"
+                            :key="i"
+                            cols="12"
+                    >
+                        <v-hover
+                                v-slot:default="{ hover }"
+                        >
+                            <v-card
+                                    :elevation="hover ? 12 : 2"
+                                    class="mx-auto"
+                                    max-width="mx-auto"
+                                    outlined
+                                    @click=""
+                                    :to="internship.to"
+                            >
+                                <div class="d-flex flex-no-wrap justify-space-between">
+                                    <div>
+                                        <v-card-subtitle>
+                                            {{ internship.company }}
+                                        </v-card-subtitle>
+                                        <v-card-text
+                                                id="text_vw"
+                                        >
+                                        <span class="font-weight-bold">{{ internship.name }}
+                                        </span><br>
+                                            {{ internship.explanation }}
+                                        </v-card-text>
+                                    </div>
+                                    <v-avatar
+                                            class="ma-3"
+                                            size="140"
+                                            tile
+                                    >
+                                        <v-img :src="internship.src"></v-img>
+                                    </v-avatar>
+                                </div>
+                            </v-card>
+                        </v-hover>
+                    </v-col>
+                </v-col>
+            </v-row>
 
+            <!-- 受賞歴 -->
+            <v-row id="radius">
+                <v-col id="padding">
                     <v-col>
                         <div class="title" id="center">- Awards Received 受賞歴 -</div>
                     </v-col>
-
                     <v-col
                             v-for="(awards, i) in awards"
                             :key="i"
@@ -95,14 +143,10 @@
                                     :to="awards.to"
                             >
                                 <div class="d-flex flex-no-wrap justify-space-between">
-
                                     <div>
-
                                         <v-card-subtitle>
                                             {{ awards.day }}
                                         </v-card-subtitle>
-
-
                                         <v-card-text
                                                 id="text_vw"
                                         >
@@ -110,10 +154,7 @@
                                         </span><br>
                                             {{ awards.description }}
                                         </v-card-text>
-
-
                                     </div>
-
                                     <v-avatar
                                             class="ma-3"
                                             size="140"
@@ -128,25 +169,20 @@
                 </v-col>
             </v-row>
 
-
+            <!-- 制作物 -->
             <v-row id="radius">
                 <v-col id="padding">
-
-
                     <v-col>
                         <div class="title" id="center">- Production 制作物 -</div>
                     </v-col>
-
                     <v-col
                             v-for="(production, i) in production"
                             :key="i"
                             cols="12"
                     >
-
                         <v-hover
                                 v-slot:default="{ hover }"
                         >
-
                             <v-card
                                     :elevation="hover ? 12 : 2"
                                     class="mx-auto"
@@ -156,14 +192,10 @@
                                     :to="production.to"
                             >
                                 <div class="d-flex flex-no-wrap justify-space-between">
-
                                     <div>
-
                                         <v-card-subtitle>
                                             {{ production.teams }}
                                         </v-card-subtitle>
-
-
                                         <v-card-text
                                                 id="text_vw"
                                         >
@@ -171,10 +203,7 @@
                                         </span><br>
                                             {{ production.explanation }}
                                         </v-card-text>
-
-
                                     </div>
-
                                     <v-avatar
                                             class="ma-3"
                                             size="140"
@@ -182,39 +211,23 @@
                                     >
                                         <v-img :src="production.src"></v-img>
                                     </v-avatar>
-
-
                                 </div>
                             </v-card>
                         </v-hover>
                     </v-col>
                 </v-col>
             </v-row>
-            <!--<v-row id="radius">-->
-
-            <!--<v-col>-->
-            <!--<div class="title">Coming Soon..</div>-->
-            <!--</v-col>-->
-
-            <!--</v-row>-->
-
-            <!--<router-link to="/Etrobo2018_awards">Etrobo2018_awards</router-link>-->
         </v-container>
     </v-app>
 </template>
 
 <script>
 
-  // import Etrobo2018_awards from '../pages/awards/Etrobo2018_awards'
-
   export default {
-
 
     data() {
       return {
-
         components: {
-          // Etrobo2018_awards,
         },
 
         items: [
@@ -294,11 +307,9 @@
           },
           {
             name: 'MusicLinker',
-            // day: '2019-12-27',
-            teams: '-',
+            teams: '5人で開発',
             src: require("../assets/musiclinker/rogo.png"),
             explanation: '全てのアーティストがフォーカスされる可能性を',
-
             to: 'MusicLinker_production'
           },
           {
@@ -310,20 +321,56 @@
           },
           {
             name: '俺の最強対策ノート',
-            teams: '-',
+            teams: '個人制作',
             src: require("../assets/saikyonote/俺.png"),
             explanation: 'スマブラSPの自作対策ノート',
             to: 'Saikyonote_production'
           },
-        ]
+          {
+            name: 'テンプレメール',
+            teams: '2人で開発',
+            src: require("../assets/templatemail/top.jpg"),
+            explanation: '面倒なメール文のテンプレ化',
+            to: 'templatemail_production'
+          },
+          {
+            name: 'スッカ',
+            teams: 'Sysken',
+            src: require("../assets/hackU2020/top.jpg"),
+            explanation: '小学生のための自己管理ツール',
+            to: 'sukka_production'
+          },
+          {
+            name: 'High Right Road',
+            teams: 'ともしか',
+            src: require("../assets/ca_challenge2020/topHrl.png"),
+            explanation: '脱出×パズルローグライクゲーム',
+            to: 'HRR_production'
+          },
+        ],
 
+        internship: [
+          {
+            name: '3weeks サーバーサイド向け育成型インターンシップ ONLINE',
+            company: 'サイバーエージェント(2020.8.24 ~ 9.11)',
+            src: require("../assets/ca_dojo2020/top.jpg"),
+            explanation: 'CAのdojoで圧倒的成長を実感',
+            to: 'CA_Tech_Challenge_2020'
+          },
+          {
+            name: '3days ゲームクライアント向け 開発型インターン ONLINE',
+            company: 'サイバーエージェント(2020.9.19 ~ 9.21)',
+            src: require("../assets/ca_challenge2020/top.png"),
+            explanation: 'dojoで得た知識でアウトプット',
+            to: 'CA_Tech_Dojo_2020'
+          }
+        ],
       }
     },
   }
 </script>
 
 <style scoped>
-
     /*スマホ*/
     #radius {
         /*margin-left: 20px;*/
@@ -351,12 +398,9 @@
         line-height: 20px;
     }
 
-
     #padding {
 
     }
-
-
 
     @media only screen and (min-width: 651px) {
         　 /* 中画面用 */
@@ -368,24 +412,14 @@
             border-radius: 10px 10px 10px 10px;
         }
 
-
         #text_vw {
             font-size: 2vw;
             line-height: 45px;
         }
 
-
         #padding {
             padding-left: 60px;
             padding-right: 60px;
         }
-
-        #carousel{
-
-        }
-
-
     }
-
-
 </style>
