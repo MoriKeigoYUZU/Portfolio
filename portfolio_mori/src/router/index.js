@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Top from '../pages/Top.vue'
 
+import CA_Tech_Challenge_2020 from '../pages/internship/CA_Tech_Challenge_2020'
+import CA_Tech_Dojo_2020 from '../pages/internship/CA_Tech_Dojo_2020'
+
 import Etrobo_2018_awards from '../pages/awards/Etrobo_2018_awards'
 import Othlohack2019_awards from '../pages/awards/Othlohack2019_awards'
 import Toyohashihack2019_awards from '../pages/awards/Toyohashihack2019_awards'
@@ -13,7 +16,9 @@ import MusicLinker_production from '../pages/production/MusicLinker_production'
 import Othlohack2019_production from '../pages/production/Othlohack2019_production'
 import Toyohashihack2019_production from '../pages/production/Toyohashihack2019_production'
 import Saikyonote_production from '../pages/production/Saikyonote_production'
-
+import templatemail_production from '../pages/production/templatemail_production'
+import sukka_production from '../pages/production/sukka_production'
+import HRR_production from '../pages/production/HRR_production'
 
 Vue.use(VueRouter)
 
@@ -72,6 +77,31 @@ const routes = [
     path: '/Saikyonote_production',
     name: 'Saikyonote_production',
     component: Saikyonote_production
+  },
+  {
+    path: '/sukka_production',
+    name: 'sukka_production',
+    component: sukka_production
+  },
+  {
+    path: '/templatemail_production',
+    name: 'templatemail_production',
+    component: templatemail_production
+  },
+  {
+    path: '/HRR_production',
+    name: 'HRR_production',
+    component: HRR_production
+  },
+  {
+    path: '/CA_Tech_Challenge_2020',
+    name: 'CA_Tech_Challenge_2020',
+    component: CA_Tech_Challenge_2020
+  },
+  {
+    path: '/CA_Tech_Dojo_2020',
+    name: 'CA_Tech_Dojo_2020',
+    component: CA_Tech_Dojo_2020
   },
 
 ]
