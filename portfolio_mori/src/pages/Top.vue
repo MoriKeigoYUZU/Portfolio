@@ -64,7 +64,7 @@
                                 </v-row>
                                 <div>Favorite things 好きなこと : 靴収集(Nike),ドライブ,創作料理</div>
                                 <div>Skill スキル : Vue.js , Go , C++ , EV3</div>
-                                <div>Studying 勉強中 : Docker , AWS</div>
+                                <!--<div>Studying 勉強中 : Docker , AWS</div>-->
                             </v-col>
                         </v-row>
                     </v-col>
