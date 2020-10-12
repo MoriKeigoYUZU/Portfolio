@@ -3,12 +3,6 @@
         <v-container class="lighten-5">
             <v-row id="radius">
                 <v-col cols="" id="padding">
-                    <!--<v-row>-->
-                        <!--<v-col cols="12">-->
-                            <!--<h1 id="center">Arepos</h1>-->
-                        <!--</v-col>-->
-                    <!--</v-row>-->
-
                     <v-row>
                         <v-col>
                             <div id="center">
