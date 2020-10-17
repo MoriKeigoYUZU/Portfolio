@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Top from '../pages/Top.vue'
 
-import CA_Tech_Challenge_2020 from '../pages/internship/CA_Tech_Challenge_2020'
 import CA_Tech_Dojo_2020 from '../pages/internship/CA_Tech_Dojo_2020'
+import CA_Tech_Challenge_2020 from '../pages/internship/CA_Tech_Challenge_2020'
 
 import Etrobo_2018_awards from '../pages/awards/Etrobo_2018_awards'
 import Othlohack2019_awards from '../pages/awards/Othlohack2019_awards'

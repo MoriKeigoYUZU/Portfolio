@@ -355,14 +355,14 @@
             company: 'サイバーエージェント(2020.8.24 ~ 9.11)',
             src: require("../assets/ca_dojo2020/top.jpg"),
             explanation: 'CAのdojoで圧倒的成長を実感',
-            to: 'CA_Tech_Challenge_2020'
+            to: 'CA_Tech_Dojo_2020'
           },
           {
             name: '3days ゲームクライアント向け 開発型インターン ONLINE',
             company: 'サイバーエージェント(2020.9.19 ~ 9.21)',
             src: require("../assets/ca_challenge2020/top.png"),
             explanation: 'dojoで得た知識でアウトプット',
-            to: 'CA_Tech_Dojo_2020'
+            to: 'CA_Tech_Challenge_2020'
           }
         ],
       }
