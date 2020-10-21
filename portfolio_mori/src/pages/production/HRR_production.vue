@@ -104,15 +104,26 @@
                                     インターンシップ
                                 </router-link>
                                 の説明に書いてあるので、そちらを見てください。<br>
-                                実装はGitHubで管理していました。
-                                <a id="green" href="https://github.com/MoriKeigoYUZU/CyberAgent-Internship-TechChallenge">
+                                実装はGitHubで管理していました。<br>
+                                <a id="green"
+                                   href="https://github.com/MoriKeigoYUZU/CyberAgent-Internship-TechChallenge">
                                     MoriKeigoYUZU / CyberAgent-Internship-TechChallenge
                                 </a>
                             </p>
-                            <h2>もりの工夫したところ</h2>
                         </v-col>
                     </v-row>
 
+                    <v-row>
+                        <v-col>
+                            <h2>使用技術</h2>
+                            <h4>クライアント側</h4>
+                            <li>Unity(c#)</li>
+                            <h4>バックエンド側</h4>
+                            <li>APIサーバ(Golnag)</li>
+                            <li>MySQL</li>
+                            <li>Ubuntu</li>
+                        </v-col>
+                    </v-row>
 
                 </v-col>
             </v-row>
