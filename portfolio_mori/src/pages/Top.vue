@@ -330,14 +330,16 @@
             name: 'テンプレメール',
             teams: '2人で開発',
             src: require("../assets/templatemail/top.jpg"),
-            explanation: '面倒なメール文のテンプレ化',
+            // explanation: '面倒なメール文のテンプレ化',
+            explanation: '更新中',
             to: 'templatemail_production'
           },
           {
             name: 'スッカ',
             teams: 'Sysken',
             src: require("../assets/hackU2020/top.jpg"),
-            explanation: '小学生のための自己管理ツール',
+            // explanation: '小学生のための自己管理ツール',
+            explanation: '更新中',
             to: 'sukka_production'
           },
           {
@@ -354,7 +356,8 @@
             name: '3weeks サーバーサイド向け育成型インターンシップ ONLINE',
             company: 'サイバーエージェント(2020.8.24 ~ 9.11)',
             src: require("../assets/ca_dojo2020/top.jpg"),
-            explanation: 'CAのdojoで圧倒的成長を実感',
+            // explanation: 'CAのdojoで圧倒的成長を実感',
+            explanation: '更新中',
             to: 'CA_Tech_Dojo_2020'
           },
           {
