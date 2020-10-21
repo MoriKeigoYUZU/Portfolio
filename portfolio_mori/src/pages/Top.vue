@@ -330,8 +330,8 @@
             name: 'テンプレメール',
             teams: '2人で開発',
             src: require("../assets/templatemail/top.jpg"),
-            // explanation: '面倒なメール文のテンプレ化',
-            explanation: '更新中',
+            explanation: '面倒なメール文のテンプレ化',
+            // explanation: '更新中',
             to: 'templatemail_production'
           },
           {
